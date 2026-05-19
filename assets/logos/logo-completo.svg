@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="NEXOCOOP">
+  <defs>
+    <linearGradient id="lGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="lGradInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="lInk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F4F4F7"/>
+      <stop offset="100%" stop-color="#C8CDDA"/>
+    </linearGradient>
+    <radialGradient id="lGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#A855F7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06070D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- mark -->
+  <g transform="translate(0,0)">
+    <circle cx="40" cy="40" r="38" fill="url(#lGlow)"/>
+    <circle cx="40" cy="40" r="28" fill="none" stroke="url(#lGrad)" stroke-width="1.5" opacity="0.85"/>
+    <path d="M 40 12 A 28 28 0 0 1 68 40" fill="none" stroke="url(#lGrad)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="40" cy="40" r="17" fill="none" stroke="url(#lGradInner)" stroke-width="2.5"/>
+    <circle cx="40" cy="40" r="7" fill="url(#lGradInner)"/>
+    <circle cx="40" cy="40" r="2.6" fill="#06070D"/>
+    <circle cx="68" cy="40" r="2.4" fill="#22D3EE"/>
+    <circle cx="22.5" cy="58" r="1.8" fill="#A855F7" opacity="0.85"/>
+    <circle cx="55" cy="14.5" r="1.4" fill="#F59E0B" opacity="0.9"/>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(94,0)" font-family="'Manrope','Inter',system-ui,sans-serif">
+    <text x="0" y="48" font-size="30" font-weight="800" fill="url(#lInk)" letter-spacing="0.5">NEXO</text>
+    <text x="86" y="48" font-size="30" font-weight="800" fill="url(#lGrad)" letter-spacing="0.5">COOP</text>
+    <!-- cognitive co-operators tagline -->
+    <text x="0" y="65" font-size="9" font-weight="500" letter-spacing="3.6" fill="#6E6E76" font-family="'JetBrains Mono','Inter',monospace">COGNITIVE  CO-OPERATORS</text>
+  </g>
+</svg>

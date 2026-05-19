@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nexocoop.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nexocoop.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexocoop.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nexocoop.com/"/>
+    <lastmod>2026-05-19</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://nexocoop.com/legal/aviso-legal.html</loc><lastmod>2026-05-19</lastmod><priority>0.3</priority></url>
+  <url><loc>https://nexocoop.com/legal/privacidad.html</loc><lastmod>2026-05-19</lastmod><priority>0.3</priority></url>
+  <url><loc>https://nexocoop.com/legal/cookies.html</loc><lastmod>2026-05-19</lastmod><priority>0.3</priority></url>
+</urlset>

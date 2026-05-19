@@ -1,0 +1,12 @@
+{
+  "name": "NEXO COOP",
+  "short_name": "NEXO COOP",
+  "description": "Cognitive Co-Operators — NEXO Cognitive SL",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070D",
+  "theme_color": "#06070D",
+  "icons": [
+    { "src": "/assets/logos/logo-hero.png", "sizes": "1200x1200", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
