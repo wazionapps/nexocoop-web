@@ -123,22 +123,25 @@
       "lg.priv.s1.h": "1. Responsable del tratamiento",
       "lg.priv.s1.p": "El responsable del tratamiento de los datos personales es NEXO Cognitive SL (CIF B-88728589), con domicilio en Avda. Edelmira Alfonso Alfonso, 1, 38628 Aldea Blanca — San Miguel de Abona, Santa Cruz de Tenerife, España. Contacto: info@nexocoop.com.",
       "lg.priv.s2.h": "2. Finalidad y base jurídica",
-      "lg.priv.s2.p": "Tratamos los datos que nos facilitas (nombre, email, teléfono, contenido de tu consulta) con la finalidad de atender solicitudes comerciales y de soporte. La base jurídica es el consentimiento del interesado y, en su caso, la ejecución de medidas precontractuales (art. 6.1.a y 6.1.b RGPD).",
+      "lg.priv.s2.p": "Tratamos los datos que nos facilitas (nombre, email, teléfono, contenido de tu consulta) para atender solicitudes comerciales y de soporte (base jurídica: consentimiento y medidas precontractuales, art. 6.1.a y 6.1.b RGPD). Si lo consientes, tratamos también datos de uso de la web mediante Google Analytics 4 con fines estadísticos agregados (base jurídica: tu consentimiento, art. 6.1.a RGPD).",
       "lg.priv.s3.h": "3. Conservación y ubicación de los datos",
       "lg.priv.s3.p": "Los datos se conservan mientras exista relación comercial o hasta que solicites su supresión. La infraestructura de NEXO Cognitive SL procesa y almacena datos dentro de la Unión Europea.",
       "lg.priv.s4.h": "4. Destinatarios",
-      "lg.priv.s4.p": "No se ceden datos a terceros salvo obligación legal o proveedores de servicio necesarios para la prestación (p. ej. Stripe para pagos), siempre bajo contrato de encargado de tratamiento y con garantías adecuadas.",
+      "lg.priv.s4.p": "No se ceden datos a terceros salvo obligación legal o proveedores de servicio necesarios para la prestación: Stripe (pagos) y, si consientes la analítica, Google Ireland Limited (Google Analytics 4). Estos proveedores actúan como encargados del tratamiento. Algún proveedor puede implicar transferencias internacionales, amparadas en Cláusulas Contractuales Tipo de la UE y medidas adicionales adecuadas.",
       "lg.priv.s5.h": "5. Derechos",
       "lg.priv.s5.p": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@nexocoop.com. Asimismo, tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).",
 
       "lg.cook.title": "Política de cookies",
       "lg.cook.updated": "Última actualización: 19 de mayo de 2026",
       "lg.cook.s1.h": "1. Qué son las cookies",
-      "lg.cook.s1.p": "Una cookie es un pequeño archivo que un sitio web guarda en tu navegador para recordar información sobre tu visita.",
-      "lg.cook.s2.h": "2. Cookies que usa este sitio",
-      "lg.cook.s2.p": "Este sitio web es estático e informativo. No utiliza cookies de seguimiento, publicidad ni analítica de terceros. Únicamente se emplea el almacenamiento local del navegador (localStorage) para recordar tu preferencia de idioma (ES/EN). Esta información no se comparte ni sale de tu dispositivo.",
-      "lg.cook.s3.h": "3. Gestión",
-      "lg.cook.s3.p": "Puedes borrar el almacenamiento local desde la configuración de tu navegador en cualquier momento, sin afectar a la funcionalidad básica del sitio."
+      "lg.cook.s1.p": "Una cookie es un pequeño archivo que un sitio web guarda en tu navegador para recordar información sobre tu visita. También usamos tecnologías similares como el almacenamiento local del navegador.",
+      "lg.cook.s2.h": "2. Cookies y tecnologías que usamos",
+      "lg.cook.s2.p": "Técnica (sin consentimiento): almacenamiento local (localStorage) para recordar tu preferencia de idioma (ES/EN) y tu decisión sobre cookies. No se comparte ni sale de tu dispositivo. Analítica (solo con tu consentimiento): Google Analytics 4, proporcionado por Google Ireland Limited, para medir de forma agregada y con IP anonimizada cómo se usa la web. Instala las cookies _ga y _ga_<id> (caducidad máxima 13 meses) y la cookie _gid (24 h). No se utilizan cookies de publicidad ni de seguimiento entre sitios.",
+      "lg.cook.s3.h": "3. Base jurídica y consentimiento",
+      "lg.cook.s3.p": "Las cookies técnicas se amparan en el interés legítimo de prestar el servicio. Las cookies analíticas solo se activan tras tu consentimiento expreso (art. 6.1.a RGPD y art. 22 LSSI). Hasta que aceptas, Google Analytics no se carga y el Consent Mode v2 mantiene todo el almacenamiento denegado por defecto.",
+      "lg.cook.s4.h": "4. Cómo cambiar o retirar tu consentimiento",
+      "lg.cook.s4.p": "Puedes cambiar o retirar tu decisión en cualquier momento con el botón siguiente, o borrando las cookies y el almacenamiento local desde la configuración de tu navegador. Retirar el consentimiento no afecta a la licitud del tratamiento previo.",
+      "lg.cook.manage": "Configurar cookies"
     },
 
     en: {
@@ -255,22 +258,25 @@
       "lg.priv.s1.h": "1. Data controller",
       "lg.priv.s1.p": "The data controller is NEXO Cognitive SL (Tax ID B-88728589), registered at Avda. Edelmira Alfonso Alfonso, 1, 38628 Aldea Blanca — San Miguel de Abona, Santa Cruz de Tenerife, Spain. Contact: info@nexocoop.com.",
       "lg.priv.s2.h": "2. Purpose and legal basis",
-      "lg.priv.s2.p": "We process the data you provide (name, email, phone, content of your enquiry) in order to handle sales and support requests. The legal basis is the data subject's consent and, where applicable, pre-contractual measures (Art. 6.1.a and 6.1.b GDPR).",
+      "lg.priv.s2.p": "We process the data you provide (name, email, phone, content of your enquiry) to handle sales and support requests (legal basis: consent and pre-contractual measures, Art. 6.1.a and 6.1.b GDPR). If you consent, we also process website usage data via Google Analytics 4 for aggregate statistical purposes (legal basis: your consent, Art. 6.1.a GDPR).",
       "lg.priv.s3.h": "3. Retention and data location",
       "lg.priv.s3.p": "Data is kept while a commercial relationship exists or until you request its deletion. NEXO Cognitive SL infrastructure processes and stores data within the European Union.",
       "lg.priv.s4.h": "4. Recipients",
-      "lg.priv.s4.p": "No data is transferred to third parties except by legal obligation or service providers necessary for delivery (e.g. Stripe for payments), always under a data processor agreement with adequate safeguards.",
+      "lg.priv.s4.p": "No data is transferred to third parties except by legal obligation or service providers necessary for delivery: Stripe (payments) and, if you consent to analytics, Google Ireland Limited (Google Analytics 4). These providers act as data processors. Some providers may involve international transfers, covered by EU Standard Contractual Clauses and appropriate additional measures.",
       "lg.priv.s5.h": "5. Rights",
       "lg.priv.s5.p": "You may exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@nexocoop.com. You also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).",
 
       "lg.cook.title": "Cookie policy",
       "lg.cook.updated": "Last updated: 19 May 2026",
       "lg.cook.s1.h": "1. What cookies are",
-      "lg.cook.s1.p": "A cookie is a small file a website stores in your browser to remember information about your visit.",
-      "lg.cook.s2.h": "2. Cookies this site uses",
-      "lg.cook.s2.p": "This website is static and informational. It uses no tracking, advertising or third-party analytics cookies. It only uses the browser's local storage (localStorage) to remember your language preference (ES/EN). This information is not shared and does not leave your device.",
-      "lg.cook.s3.h": "3. Management",
-      "lg.cook.s3.p": "You can clear local storage from your browser settings at any time, without affecting the basic functionality of the site."
+      "lg.cook.s1.p": "A cookie is a small file a website stores in your browser to remember information about your visit. We also use similar technologies such as the browser's local storage.",
+      "lg.cook.s2.h": "2. Cookies and technologies we use",
+      "lg.cook.s2.p": "Strictly necessary (no consent): local storage (localStorage) to remember your language preference (ES/EN) and your cookie choice. Not shared and never leaves your device. Analytics (consent only): Google Analytics 4, provided by Google Ireland Limited, to measure in aggregate and with anonymized IP how the site is used. It sets the _ga and _ga_<id> cookies (max lifetime 13 months) and the _gid cookie (24 h). No advertising or cross-site tracking cookies are used.",
+      "lg.cook.s3.h": "3. Legal basis and consent",
+      "lg.cook.s3.p": "Strictly necessary cookies rely on the legitimate interest of providing the service. Analytics cookies are activated only after your explicit consent (Art. 6.1.a GDPR). Until you accept, Google Analytics does not load and Consent Mode v2 keeps all storage denied by default.",
+      "lg.cook.s4.h": "4. How to change or withdraw your consent",
+      "lg.cook.s4.p": "You can change or withdraw your choice at any time with the button below, or by clearing cookies and local storage in your browser settings. Withdrawing consent does not affect the lawfulness of prior processing.",
+      "lg.cook.manage": "Cookie settings"
     }
   };
 

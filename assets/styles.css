@@ -561,6 +561,50 @@ section { padding: 96px 0; position: relative; }
 .meaning-card, .contact-card, .pillar { transition: transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease); }
 .meaning-card:hover { transform: translateY(-4px); box-shadow: 0 18px 50px -24px rgba(99,102,241,.55); }
 
+/* ---------------- Cookie consent banner ---------------- */
+.cc-banner {
+  position: fixed;
+  left: 16px; right: 16px; bottom: 16px;
+  z-index: 80;
+  background: rgba(15,16,21,.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--line-strong);
+  border-radius: 18px;
+  box-shadow: 0 24px 70px -28px rgba(0,0,0,.9);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .35s var(--ease), transform .35s var(--ease);
+}
+.cc-banner.cc-in { opacity: 1; transform: none; }
+.cc-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.cc-text strong {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+}
+.cc-text p { color: var(--ink-soft); font-size: 14px; line-height: 1.55; margin: 0; }
+.cc-text a { color: var(--indigo-glow); text-decoration: underline; }
+.cc-actions { display: flex; gap: 12px; flex-shrink: 0; }
+.cc-actions .btn { padding: 12px 24px; font-size: 14px; }
+.cc-reject { background: transparent; }
+
+@media (max-width: 720px) {
+  .cc-banner { left: 10px; right: 10px; bottom: 10px; }
+  .cc-inner { flex-direction: column; align-items: stretch; gap: 16px; padding: 20px; }
+  .cc-actions { flex-direction: column-reverse; }
+  .cc-actions .btn { width: 100%; justify-content: center; }
+}
+
 /* ---------------- Responsive ---------------- */
 @media (max-width: 940px) {
   .pillars { grid-template-columns: repeat(2, 1fr); }
