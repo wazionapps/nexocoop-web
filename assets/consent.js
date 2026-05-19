@@ -7,8 +7,14 @@
 (function () {
   "use strict";
 
+  /* ▼▼▼ ÚNICO PUNTO A EDITAR ▼▼▼
+     Pega aquí el Measurement ID de GA4 (formato G-XXXXXXXXXX) y despliega.
+     Vacío = Analytics desactivado (el resto del sitio funciona igual). */
+  var GA_MEASUREMENT_ID = "";
+  /* ▲▲▲ ─────────────────────── ▲▲▲ */
+
   var SELF = document.currentScript;
-  var GA_ID = (SELF && SELF.getAttribute("data-ga") || "").trim();
+  var GA_ID = (GA_MEASUREMENT_ID || (SELF && SELF.getAttribute("data-ga")) || "").trim();
   var GA_VALID = /^G-[A-Z0-9]{6,}$/.test(GA_ID) && GA_ID !== "G-XXXXXXXXXX";
   var STORE = "nexocoop_consent"; // 'granted' | 'denied'
 
