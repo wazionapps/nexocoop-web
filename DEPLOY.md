@@ -61,6 +61,23 @@ git add -A && git commit -m "..." && git push
 # GitHub Pages redespliega solo en ~1 min
 ```
 
+## Security headers (aplicar al pasar a Cloudflare)
+GitHub Pages no permite cabeceras personalizadas. Cuando el dominio esté en
+Cloudflare, añadir vía **Transform Rules → HTTP Response Headers** (o Pages
+`_headers`):
+
+```
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=()
+Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; base-uri 'self'; frame-ancestors 'none'
+```
+> El sitio usa estilos/atributos inline, un `<script>` inline y un SVG de
+> grano en `data:`. El CSP de arriba lo contempla. Si más adelante se quita
+> el JS inline, endurecer `script-src` a `'self'`.
+
 ## Seguridad — pendiente
 La contraseña de `info@nexocoop.com` se pasó por chat y está guardada cifrada
 en la bóveda NEXO (`nexocoop-google-workspace/admin`). **Recomendado:**

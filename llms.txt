@@ -1,0 +1,31 @@
+# NEXO COOP
+
+> NEXO Cognitive SL (marca comercial NEXO COOP) es la empresa matriz que crea
+> Cognitive Co-Operators: inteligencia que se sienta a tu lado y piensa,
+> recuerda, aprende y evoluciona contigo — cooperación real, no automatización
+> ciega. Ingeniería europea, datos en Europa, cumplimiento RGPD.
+
+- Nombre comercial: NEXO COOP
+- Razón social: NEXO Cognitive SL
+- CIF: B-88728589
+- Domicilio: Avda. Edelmira Alfonso Alfonso, 1, 38628 Aldea Blanca — San Miguel de Abona, Santa Cruz de Tenerife, Islas Canarias, España
+- Email: info@nexocoop.com
+- Ventas: +34 649 94 33 50 · Soporte: +34 648 90 30 26
+- Idiomas del sitio: español (es) e inglés (en)
+
+## Producto insignia
+
+- [NEXO Desktop](https://nexo-desktop.com): el Co-Operator de escritorio para Mac y Windows. Memoria compartida entre herramientas, aprende observando, trabaja a tu lado. Datos en Europa.
+
+## Páginas
+
+- [Inicio](https://nexocoop.com/): qué es NEXO COOP, soluciones, producto, empresa y contacto.
+- [Aviso legal](https://nexocoop.com/legal/aviso-legal.html)
+- [Política de privacidad (RGPD)](https://nexocoop.com/legal/privacidad.html)
+- [Política de cookies](https://nexocoop.com/legal/cookies.html)
+
+## Notas
+
+- NEXO COOP es la empresa matriz; NEXO Desktop es su primer producto en producción.
+- Categoría: Cognitive Co-Operator (no es un chatbot ni RPA).
+- Tagline: "No contratas software. Despiertas un cerebro."

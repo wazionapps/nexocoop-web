@@ -6,6 +6,8 @@
 <title data-i18n="doc.title">NEXO COOP — Cognitive Co-Operators | NEXO Cognitive SL</title>
 <meta name="description" data-i18n="doc.desc" content="NEXO Cognitive SL — la empresa que crea Cognitive Co-Operators: inteligencia que se sienta a tu lado, piensa, recuerda, aprende y evoluciona contigo.">
 <meta name="theme-color" content="#06070D">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://nexocoop.com/">
 <link rel="alternate" hreflang="es" href="https://nexocoop.com/?lang=es">
 <link rel="alternate" hreflang="en" href="https://nexocoop.com/?lang=en">
@@ -32,25 +34,53 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "NEXO Cognitive SL",
-  "alternateName": "NEXO COOP",
-  "url": "https://nexocoop.com",
-  "logo": "https://nexocoop.com/assets/logos/logo-hero.png",
-  "email": "info@nexocoop.com",
-  "slogan": "Cognitive Co-Operators.",
-  "taxID": "B-88728589",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Avda. Edelmira Alfonso Alfonso, 1",
-    "addressLocality": "San Miguel de Abona",
-    "postalCode": "38628",
-    "addressRegion": "Santa Cruz de Tenerife",
-    "addressCountry": "ES"
-  },
-  "contactPoint": [
-    { "@type": "ContactPoint", "telephone": "+34649943350", "contactType": "sales" },
-    { "@type": "ContactPoint", "telephone": "+34648903026", "contactType": "customer support" }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nexocoop.com/#org",
+      "name": "NEXO Cognitive SL",
+      "alternateName": "NEXO COOP",
+      "url": "https://nexocoop.com",
+      "logo": "https://nexocoop.com/assets/logos/logo-hero.png",
+      "image": "https://nexocoop.com/assets/logos/logo-hero.png",
+      "email": "info@nexocoop.com",
+      "slogan": "Cognitive Co-Operators.",
+      "description": "NEXO Cognitive SL crea Cognitive Co-Operators: inteligencia que piensa, recuerda, aprende y evoluciona contigo. Ingeniería europea, datos en Europa.",
+      "taxID": "B-88728589",
+      "vatID": "ESB88728589",
+      "foundingLocation": "Santa Cruz de Tenerife, España",
+      "areaServed": "ES",
+      "knowsLanguage": ["es", "en"],
+      "sameAs": ["https://nexo-desktop.com"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avda. Edelmira Alfonso Alfonso, 1",
+        "addressLocality": "San Miguel de Abona",
+        "postalCode": "38628",
+        "addressRegion": "Santa Cruz de Tenerife",
+        "addressCountry": "ES"
+      },
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+34649943350", "contactType": "sales", "availableLanguage": ["es", "en"] },
+        { "@type": "ContactPoint", "telephone": "+34648903026", "contactType": "customer support", "availableLanguage": ["es", "en"] }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nexocoop.com/#website",
+      "url": "https://nexocoop.com",
+      "name": "NEXO COOP",
+      "inLanguage": ["es", "en"],
+      "publisher": { "@id": "https://nexocoop.com/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NEXO Desktop",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "macOS, Windows",
+      "url": "https://nexo-desktop.com",
+      "publisher": { "@id": "https://nexocoop.com/#org" }
+    }
   ]
 }
 </script>

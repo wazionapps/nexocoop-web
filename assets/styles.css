@@ -36,7 +36,33 @@
   --maxw: 1180px;
   --radius: 18px;
   --ease: cubic-bezier(.22,.61,.36,1);
+
+  color-scheme: dark;
 }
+
+/* Ink-muted +luminancia para cumplir contraste AA en texto pequeño
+   (sobre #06070D el antiguo #6E6E76 quedaba ~4.0:1). Marca preservada. */
+:root { --ink-muted: #8A8A95; }
+
+::selection { background: rgba(129,140,248,.35); color: #fff; }
+
+/* Foco visible accesible — nunca outline:none sin reemplazo */
+:focus-visible {
+  outline: 2px solid var(--indigo-glow);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+a:focus-visible, .btn:focus-visible {
+  outline: 2px solid var(--indigo-glow);
+  outline-offset: 4px;
+}
+
+/* Scrollbar acorde a la marca */
+* { scrollbar-width: thin; scrollbar-color: #2A2D3C var(--abyss); }
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: var(--abyss); }
+::-webkit-scrollbar-thumb { background: #2A2D3C; border-radius: 8px; border: 3px solid var(--abyss); }
+::-webkit-scrollbar-thumb:hover { background: #3A3E52; }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -68,6 +94,17 @@ body::before {
     radial-gradient(55vw 45vh at 12% 8%, rgba(99,102,241,.18), transparent 60%),
     radial-gradient(50vw 45vh at 60% 100%, rgba(34,211,238,.07), transparent 60%);
   pointer-events: none;
+}
+
+/* Grano sutil: profundidad atmosférica, sin fondos planos */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: .035;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 a { color: inherit; text-decoration: none; }
@@ -174,9 +211,10 @@ h1, h2, h3 {
 }
 .lang-toggle button {
   background: transparent;
-  color: var(--ink-muted);
+  color: var(--ink-soft);
   border: none;
-  padding: 7px 13px;
+  min-height: 40px;
+  padding: 9px 16px;
   cursor: pointer;
   letter-spacing: .08em;
   transition: color .2s, background .2s;
@@ -190,7 +228,9 @@ h1, h2, h3 {
   border: none;
   color: var(--ink);
   cursor: pointer;
-  padding: 6px;
+  width: 44px; height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------- Hero ---------------- */
@@ -499,15 +539,16 @@ section { padding: 96px 0; position: relative; }
 .btn-primary::after {
   content: "";
   position: absolute;
-  top: 0; left: -120%;
+  top: 0; left: 0;
   width: 60%; height: 100%;
   background: linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
-  transform: skewX(-18deg);
+  will-change: transform;
   animation: btnShimmer 5.5s ease-in-out infinite;
 }
+/* Solo transform (GPU): sin layout thrash */
 @keyframes btnShimmer {
-  0%, 62%  { left: -120%; }
-  82%,100% { left: 140%; }
+  0%, 62%  { transform: translateX(-220%) skewX(-18deg); }
+  82%,100% { transform: translateX(380%)  skewX(-18deg); }
 }
 
 /* Micro-interacciones */
@@ -542,7 +583,7 @@ section { padding: 96px 0; position: relative; }
     padding: 8px 0;
   }
   .nav-links.open a { padding: 16px 28px; width: 100%; }
-  .nav-burger { display: block; }
+  .nav-burger { display: flex; }
   section { padding: 72px 0; }
   .meaning-grid { grid-template-columns: 1fr; }
   .pillars { grid-template-columns: 1fr; }
